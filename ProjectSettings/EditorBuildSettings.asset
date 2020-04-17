@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings_Screen.unity
     guid: 6dfebd8f85ea94ef8a48badf9d653d53
+  - enabled: 1
+    path: Assets/Scenes/_albert_eistein/ael_1.unity
+    guid: 9cbd15ec6d0da4b63bf98ad2130da12b
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: a6dfcb8a7ccf0490bb923836118e48b5
   m_configObjects: {}

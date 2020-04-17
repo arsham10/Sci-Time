@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class player : MonoBehaviour
 {
@@ -19,11 +21,13 @@ public class player : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
 
     public Health_Bar healthbar;
-    
+
     public int maxHealth = 20;
+    public int TotalLives = 5;
     public int currentHealth;
 
     public Text NumericalHealth;
+    public Text TotalLivesLabel;
     //[SerializeField] TextMeshProGUI NumericalHealth;
 
 
@@ -49,15 +53,26 @@ public class player : MonoBehaviour
 
     // Update is called once per frame
     private void Update()
+
     {
 
-        Debug.Log(currentHealth.ToString());
-        NumericalHealth.text = currentHealth.ToString();
+        if (currentHealth == 0 & TotalLives != 0)
+        {
+            currentHealth = maxHealth;
+            healthbar.SetHealth(maxHealth);
+            TotalLives -= 1;
+            TotalLivesLabel.text = TotalLives.ToString();
+            Debug.Log(TotalLives);
+        }
+        
 
+        if (TotalLives == 0 & currentHealth == 0) {
+            Debug.Log("Game Over");
+            SceneManager.LoadScene("GameOver");
+        }
+        
         if (Input.GetKeyDown(KeyCode.S)) {
             TakeDamage(1);
-            NumericalHealth.text = currentHealth.ToString();
-            Debug.Log(currentHealth);
         }
         
         float move = Input.GetAxis("Horizontal");
