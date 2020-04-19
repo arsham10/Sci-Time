@@ -13,8 +13,8 @@ public class player : MonoBehaviour
     public float speed;
     public float jumpForce;
 
-    
-    
+
+
     private Animator _animator;
     private bool _isTouchingGround;
     private bool facingRight = true;
@@ -24,6 +24,7 @@ public class player : MonoBehaviour
 
     public int maxHealth = 20;
     public int TotalLives = 5;
+    
     public int currentHealth;
 
     public Text NumericalHealth;
@@ -36,14 +37,14 @@ public class player : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-         
+
 
         currentHealth = maxHealth;
         healthbar.SetMaxHealth(maxHealth);
 
         NumericalHealth.text = maxHealth.ToString();
 
-        
+
 
 
 
@@ -56,25 +57,32 @@ public class player : MonoBehaviour
 
     {
 
-        if (currentHealth == 0 & TotalLives != 0)
+        if (currentHealth <= 0 && TotalLives != 0)
         {
             currentHealth = maxHealth;
             healthbar.SetHealth(maxHealth);
-            TotalLives -= 1;
-            TotalLivesLabel.text = TotalLives.ToString();
-            Debug.Log(TotalLives);
-        }
-        
+            NumericalHealth.text = maxHealth.ToString();
 
-        if (TotalLives == 0 & currentHealth == 0) {
+            TotalLives -= 1;
+            
+            TotalLivesLabel.text = TotalLives.ToString();
+            
+        }
+
+
+
+        if (TotalLives < 1)
+        {
             Debug.Log("Game Over");
             SceneManager.LoadScene("GameOver");
         }
-        
-        if (Input.GetKeyDown(KeyCode.S)) {
+
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
             TakeDamage(1);
         }
-        
+
         float move = Input.GetAxis("Horizontal");
         Jump();
         if (Input.GetKey(KeyCode.D))
@@ -88,7 +96,7 @@ public class player : MonoBehaviour
             _animator.SetBool("idle", false);
             _animator.SetBool("run", true);
             _rigidbody2D.velocity = new Vector2(speed * move, _rigidbody2D.velocity.y);
-            
+
         }
         else
         {
@@ -100,9 +108,9 @@ public class player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D) && !facingRight)
         {
             Flip();
-            
+
         }
-        else if(Input.GetKeyDown(KeyCode.A) && facingRight)
+        else if (Input.GetKeyDown(KeyCode.A) && facingRight)
         {
             Flip();
         }
@@ -140,10 +148,11 @@ public class player : MonoBehaviour
             _animator.SetBool("idle", false);
             _animator.SetBool("jump", true);
         }
-        else {
+        else
+        {
             _animator.SetBool("jump", false);
         }
-        
+
 
     }
 
@@ -168,11 +177,16 @@ public class player : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage) {
-        currentHealth -= damage;
-        healthbar.SetHealth(currentHealth);
-        NumericalHealth.text = currentHealth.ToString();
-
+    void TakeDamage(int damage)
+    {
+        if(currentHealth >= 1)
+        {
+            currentHealth -= damage;
+            
+            healthbar.SetHealth(currentHealth);
+            NumericalHealth.text = currentHealth.ToString();
+        }
+        
     }
 
 
