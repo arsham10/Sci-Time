@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Control_Screen.unity
+- path: Assets/Scenes/_albert_eistein/ael_1.unity
   isLoaded: 1
   isActive: 1
