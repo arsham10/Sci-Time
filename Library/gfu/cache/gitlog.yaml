@@ -13,9 +13,171 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-04-23T16:43:49.734+08:00
-  initializedAtString: 2020-04-23T16:40:52.066+08:00
+  lastUpdatedAtString: 2020-04-30T15:32:16.542+08:00
+  initializedAtString: 2020-04-30T15:31:34.000+08:00
   log:
+  - commitID: cea282a1a886d9d280711bc5dbe353e495ddd32d
+    mergeA: 
+    mergeB: 
+    authorName: arsham10
+    authorEmail: kidosol2256@gmail.com
+    commitEmail: kidosol2256@gmail.com
+    commitName: arsham10
+    summary: AI following complete
+    description: AI following works but it doesnt have a range of sight
+    timeString: 2020-04-30T15:31:28.000+08:00
+    commitTimeString: 2020-04-30T15:31:28.000+08:00
+    changes:
+    - path: Assets/EnemyAI.cs
+      fullPath: /Users/arsham/Science-BreakThrough/Assets/EnemyAI.cs
+      projectPath: Assets/EnemyAI.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/EnemyAI.cs.meta
+      fullPath: /Users/arsham/Science-BreakThrough/Assets/EnemyAI.cs.meta
+      projectPath: Assets/EnemyAI.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Scenes/_albert_eistein/ael_1.unity
+      fullPath: /Users/arsham/Science-BreakThrough/Assets/Scenes/_albert_eistein/ael_1.unity
+      projectPath: Assets/Scenes/_albert_eistein/ael_1.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets/Scripts/EnemyGFX.cs
+      fullPath: /Users/arsham/Science-BreakThrough/Assets/Scripts/EnemyGFX.cs
+      projectPath: Assets/Scripts/EnemyGFX.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/Collab/CollabSnapshot_4fac4281-ce38-447f-ba17-d16f156c74f9.txt
+      fullPath: /Users/arsham/Science-BreakThrough/Library/Collab/CollabSnapshot_4fac4281-ce38-447f-ba17-d16f156c74f9.txt
+      projectPath: Library/Collab/CollabSnapshot_4fac4281-ce38-447f-ba17-d16f156c74f9.txt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/CurrentLayout.dwlt
+      fullPath: /Users/arsham/Science-BreakThrough/Library/CurrentLayout.dwlt
+      projectPath: Library/CurrentLayout.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/CurrentMaximizeLayout.dwlt
+      fullPath: /Users/arsham/Science-BreakThrough/Library/CurrentMaximizeLayout.dwlt
+      projectPath: Library/CurrentMaximizeLayout.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/EditorInstance.json
+      fullPath: /Users/arsham/Science-BreakThrough/Library/EditorInstance.json
+      projectPath: Library/EditorInstance.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/InspectorExpandedItems.asset
+      fullPath: /Users/arsham/Science-BreakThrough/Library/InspectorExpandedItems.asset
+      projectPath: Library/InspectorExpandedItems.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Assembly-CSharp.dll
+      fullPath: /Users/arsham/Science-BreakThrough/Library/ScriptAssemblies/Assembly-CSharp.dll
+      projectPath: Library/ScriptAssemblies/Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/ScriptAssemblies/Assembly-CSharp.pdb
+      fullPath: /Users/arsham/Science-BreakThrough/Library/ScriptAssemblies/Assembly-CSharp.pdb
+      projectPath: Library/ScriptAssemblies/Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/StateCache/Hierarchy/67d1c2-mainStage.json
+      fullPath: /Users/arsham/Science-BreakThrough/Library/StateCache/Hierarchy/67d1c2-mainStage.json
+      projectPath: Library/StateCache/Hierarchy/67d1c2-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/StateCache/SceneView/575e79-mainStage.json
+      fullPath: /Users/arsham/Science-BreakThrough/Library/StateCache/SceneView/575e79-mainStage.json
+      projectPath: Library/StateCache/SceneView/575e79-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/assetDatabase3
+      fullPath: /Users/arsham/Science-BreakThrough/Library/assetDatabase3
+      projectPath: Library/assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/expandedItems
+      fullPath: /Users/arsham/Science-BreakThrough/Library/expandedItems
+      projectPath: Library/expandedItems
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/branches.yaml
+      fullPath: /Users/arsham/Science-BreakThrough/Library/gfu/cache/branches.yaml
+      projectPath: Library/gfu/cache/branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitlocks.yaml
+      fullPath: /Users/arsham/Science-BreakThrough/Library/gfu/cache/gitlocks.yaml
+      projectPath: Library/gfu/cache/gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/arsham/Science-BreakThrough/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/arsham/Science-BreakThrough/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/arsham/Science-BreakThrough/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/arsham/Science-BreakThrough/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/metadata/77/77edcfc915046473aaa029290644cc48
+      fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/77/77edcfc915046473aaa029290644cc48
+      projectPath: Library/metadata/77/77edcfc915046473aaa029290644cc48
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library/metadata/77/77edcfc915046473aaa029290644cc48.info
+      fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/77/77edcfc915046473aaa029290644cc48.info
+      projectPath: Library/metadata/77/77edcfc915046473aaa029290644cc48.info
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library/metadata/da/da1beba03744043eca3509d84518e21c
+      fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/da/da1beba03744043eca3509d84518e21c
+      projectPath: Library/metadata/da/da1beba03744043eca3509d84518e21c
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library/shadercompiler-UnityShaderCompiler0.log
+      fullPath: /Users/arsham/Science-BreakThrough/Library/shadercompiler-UnityShaderCompiler0.log
+      projectPath: Library/shadercompiler-UnityShaderCompiler0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 80e1ee18306abc3f6245a9ee1fb7a5f1851f0923
     mergeA: 
     mergeB: 

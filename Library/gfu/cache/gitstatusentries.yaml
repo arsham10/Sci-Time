@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-04-30T15:30:25.439+08:00
-  initializedAtString: 2020-04-30T15:22:21.558+08:00
+  lastUpdatedAtString: 2020-05-15T14:02:57.029+08:00
+  initializedAtString: 2020-05-15T14:02:57.029+08:00
   entries:
   - path: .collabignore
     fullPath: /Users/arsham/Science-BreakThrough/.collabignore
@@ -70,6 +70,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: .vs/Science-BreakThrough/xs/sqlite3/storage.ide-shm
+    fullPath: /Users/arsham/Science-BreakThrough/.vs/Science-BreakThrough/xs/sqlite3/storage.ide-shm
+    projectPath: .vs/Science-BreakThrough/xs/sqlite3/storage.ide-shm
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: .vs/Science-BreakThrough/xs/sqlite3/storage.ide-wal
+    fullPath: /Users/arsham/Science-BreakThrough/.vs/Science-BreakThrough/xs/sqlite3/storage.ide-wal
+    projectPath: .vs/Science-BreakThrough/xs/sqlite3/storage.ide-wal
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: .vs/Science-BreakThrough/xs/UserPrefs.xml
     fullPath: /Users/arsham/Science-BreakThrough/.vs/Science-BreakThrough/xs/UserPrefs.xml
     projectPath: .vs/Science-BreakThrough/xs/UserPrefs.xml
@@ -98,23 +110,47 @@ MonoBehaviour:
     fullPath: /Users/arsham/Science-BreakThrough/Assets/EnemyAI.cs
     projectPath: Assets/EnemyAI.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Assets/EnemyAI.cs.meta
     fullPath: /Users/arsham/Science-BreakThrough/Assets/EnemyAI.cs.meta
     projectPath: Assets/EnemyAI.cs.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Assets/Scenes/_albert_eistein/ael_1.unity
     fullPath: /Users/arsham/Science-BreakThrough/Assets/Scenes/_albert_eistein/ael_1.unity
     projectPath: Assets/Scenes/_albert_eistein/ael_1.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets/Scripts/EnemyGFX.cs
-    fullPath: /Users/arsham/Science-BreakThrough/Assets/Scripts/EnemyGFX.cs
-    projectPath: Assets/Scripts/EnemyGFX.cs
+  - path: Assets/Scripts/Enemy.cs
+    fullPath: /Users/arsham/Science-BreakThrough/Assets/Scripts/Enemy.cs
+    projectPath: Assets/Scripts/Enemy.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets/Scripts/Enemy.cs.meta
+    fullPath: /Users/arsham/Science-BreakThrough/Assets/Scripts/Enemy.cs.meta
+    projectPath: Assets/Scripts/Enemy.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets/Scripts/EnemyAI.cs
+    fullPath: /Users/arsham/Science-BreakThrough/Assets/Scripts/EnemyAI.cs
+    projectPath: Assets/Scripts/EnemyAI.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets/Scripts/EnemyAI.cs.meta
+    fullPath: /Users/arsham/Science-BreakThrough/Assets/Scripts/EnemyAI.cs.meta
+    projectPath: Assets/Scripts/EnemyAI.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets/Scripts/player.cs
+    fullPath: /Users/arsham/Science-BreakThrough/Assets/Scripts/player.cs
+    projectPath: Assets/Scripts/player.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -989,21 +1025,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library/CurrentMaximizeLayout.dwlt
-    fullPath: /Users/arsham/Science-BreakThrough/Library/CurrentMaximizeLayout.dwlt
-    projectPath: Library/CurrentMaximizeLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library/EditorInstance.json
     fullPath: /Users/arsham/Science-BreakThrough/Library/EditorInstance.json
     projectPath: Library/EditorInstance.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/expandedItems
-    fullPath: /Users/arsham/Science-BreakThrough/Library/expandedItems
-    projectPath: Library/expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1049,24 +1073,30 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library/metadata/5a/5a98c01fc2a5b4f12a6b111a983e5829
+    fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/5a/5a98c01fc2a5b4f12a6b111a983e5829
+    projectPath: Library/metadata/5a/5a98c01fc2a5b4f12a6b111a983e5829
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library/metadata/77/77edcfc915046473aaa029290644cc48
     fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/77/77edcfc915046473aaa029290644cc48
     projectPath: Library/metadata/77/77edcfc915046473aaa029290644cc48
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library/metadata/77/77edcfc915046473aaa029290644cc48.info
-    fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/77/77edcfc915046473aaa029290644cc48.info
-    projectPath: Library/metadata/77/77edcfc915046473aaa029290644cc48.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library/metadata/da/da1beba03744043eca3509d84518e21c
-    fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/da/da1beba03744043eca3509d84518e21c
-    projectPath: Library/metadata/da/da1beba03744043eca3509d84518e21c
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library/metadata/b0/b03dd9d4ce2374a61bfb38f18bece710
+    fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/b0/b03dd9d4ce2374a61bfb38f18bece710
+    projectPath: Library/metadata/b0/b03dd9d4ce2374a61bfb38f18bece710
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library/metadata/b0/b03dd9d4ce2374a61bfb38f18bece710.info
+    fullPath: /Users/arsham/Science-BreakThrough/Library/metadata/b0/b03dd9d4ce2374a61bfb38f18bece710.info
+    projectPath: Library/metadata/b0/b03dd9d4ce2374a61bfb38f18bece710.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library/ScriptAssemblies/Assembly-CSharp.dll
     fullPath: /Users/arsham/Science-BreakThrough/Library/ScriptAssemblies/Assembly-CSharp.dll
     projectPath: Library/ScriptAssemblies/Assembly-CSharp.dll
@@ -1076,12 +1106,6 @@ MonoBehaviour:
   - path: Library/ScriptAssemblies/Assembly-CSharp.pdb
     fullPath: /Users/arsham/Science-BreakThrough/Library/ScriptAssemblies/Assembly-CSharp.pdb
     projectPath: Library/ScriptAssemblies/Assembly-CSharp.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library/shadercompiler-UnityShaderCompiler0.log
-    fullPath: /Users/arsham/Science-BreakThrough/Library/shadercompiler-UnityShaderCompiler0.log
-    projectPath: Library/shadercompiler-UnityShaderCompiler0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1127,6 +1151,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: obj/Debug/AstarPathfindingProjectEditor.csprojAssemblyReference.cache
+    fullPath: /Users/arsham/Science-BreakThrough/obj/Debug/AstarPathfindingProjectEditor.csprojAssemblyReference.cache
+    projectPath: obj/Debug/AstarPathfindingProjectEditor.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: obj/Debug/PackageToolsEditor.csprojAssemblyReference.cache
+    fullPath: /Users/arsham/Science-BreakThrough/obj/Debug/PackageToolsEditor.csprojAssemblyReference.cache
+    projectPath: obj/Debug/PackageToolsEditor.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: PackageToolsEditor.csproj
     fullPath: /Users/arsham/Science-BreakThrough/PackageToolsEditor.csproj
     projectPath: PackageToolsEditor.csproj
@@ -1136,12 +1172,6 @@ MonoBehaviour:
   - path: Science-BreakThrough.sln
     fullPath: /Users/arsham/Science-BreakThrough/Science-BreakThrough.sln
     projectPath: Science-BreakThrough.sln
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp/ProcessJobs/2992039c52923dad903a8c0db934f209.bakert
-    fullPath: /Users/arsham/Science-BreakThrough/Temp/ProcessJobs/2992039c52923dad903a8c0db934f209.bakert
-    projectPath: Temp/ProcessJobs/2992039c52923dad903a8c0db934f209.bakert
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

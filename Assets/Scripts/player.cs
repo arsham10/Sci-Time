@@ -24,12 +24,17 @@ public class player : MonoBehaviour
 
     public int maxHealth = 20;
     public int TotalLives = 5;
-    
+
     public int currentHealth;
 
     public Text NumericalHealth;
     public Text TotalLivesLabel;
+    public GameObject enemy;
+
+    private float nextActionTime = 0.0f;
+    public float period =10000f;
     //[SerializeField] TextMeshProGUI NumericalHealth;
+
 
 
     // Start is called before the first frame update
@@ -64,9 +69,9 @@ public class player : MonoBehaviour
             NumericalHealth.text = maxHealth.ToString();
 
             TotalLives -= 1;
-            
+
             TotalLivesLabel.text = TotalLives.ToString();
-            
+
         }
 
 
@@ -77,11 +82,20 @@ public class player : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
 
+        float distToPlayer = Vector2.Distance(transform.position, enemy.transform.position);
+        //Debug.Log(distToPlayer);
 
-        if (Input.GetKeyDown(KeyCode.S))
+        //if (Input.GetKeyDown(KeyCode.S))
+        if (distToPlayer < 2)
         {
-            TakeDamage(1);
+            //if (Time.time > nextActionTime)
+            //{
+                //nextActionTime += Time.time + period;
+                TakeDamage(1);
+            //}
         }
+
+
 
         float move = Input.GetAxis("Horizontal");
         Jump();
@@ -177,16 +191,23 @@ public class player : MonoBehaviour
         }
     }
 
+
     void TakeDamage(int damage)
     {
-        if(currentHealth >= 1)
+        if (currentHealth >= 1)
         {
             currentHealth -= damage;
-            
+
             healthbar.SetHealth(currentHealth);
             NumericalHealth.text = currentHealth.ToString();
         }
-        
+
+    }
+    IEnumerator ExampleCoroutine()
+    {
+
+        yield return new WaitForSeconds(5);
+        TakeDamage(1);
     }
 
 
