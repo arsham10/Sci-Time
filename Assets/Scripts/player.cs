@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,8 +24,15 @@ public class player : MonoBehaviour
 
     public Health_Bar healthbar;
 
-    public int maxHealth = 20;
+    public int maxHealth = 10;
     public int TotalLives = 5;
+    public float invulTime = 3f;
+    public bool invulnerable = false;
+
+    
+
+
+
 
     public int currentHealth;
 
@@ -31,8 +40,8 @@ public class player : MonoBehaviour
     public Text TotalLivesLabel;
     public GameObject enemy;
 
-    private float nextActionTime = 0.0f;
-    public float period =10000f;
+    //private float nextActionTime = 0.0f;
+    //public float period = 10000f;
     //[SerializeField] TextMeshProGUI NumericalHealth;
 
 
@@ -40,14 +49,16 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+    
+
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-
 
         currentHealth = maxHealth;
         healthbar.SetMaxHealth(maxHealth);
 
         NumericalHealth.text = maxHealth.ToString();
+
 
 
 
@@ -90,8 +101,8 @@ public class player : MonoBehaviour
         {
             //if (Time.time > nextActionTime)
             //{
-                //nextActionTime += Time.time + period;
-                TakeDamage(1);
+            //nextActionTime += Time.time + period;
+            TakeDamage(1);
             //}
         }
 
@@ -194,20 +205,35 @@ public class player : MonoBehaviour
 
     void TakeDamage(int damage)
     {
-        if (currentHealth >= 1)
+
+        //if (currentHealth >= 1)
+        //{
+        //    currentHealth -= damage;
+
+        //    healthbar.SetHealth(currentHealth);
+        //    NumericalHealth.text = currentHealth.ToString();
+        //}
+        if (!invulnerable)
         {
             currentHealth -= damage;
 
             healthbar.SetHealth(currentHealth);
             NumericalHealth.text = currentHealth.ToString();
+            StartCoroutine(JustHurt());
         }
 
     }
-    IEnumerator ExampleCoroutine()
-    {
+    //IEnumerator ExampleCoroutine()
+    //{
 
-        yield return new WaitForSeconds(5);
-        TakeDamage(1);
+    //    yield return new WaitForSeconds(5);
+    //    TakeDamage(1);
+    //}
+    IEnumerator JustHurt()
+    {
+        invulnerable = true;
+        yield return new WaitForSeconds(invulTime);
+        invulnerable = false;
     }
 
 
